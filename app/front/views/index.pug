@@ -1,5 +1,27 @@
-html
-  head
-    title= title
-  body
-    h1= message
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title KongDeck
+
+        link(rel='stylesheet', href='/css/style.css')
+        script(src='/js/scroll.js')
+
+    body
+        header
+            p KongDeck
+        
+        #container
+            form(action="/", method="post")
+                h1 What KONG are you ?
+                each questionStep, stepIndex in survey
+                    h2 #{questionStep.question}
+                    .answers
+                        each answerStep, answerIndex in questionStep.answers
+                            - var id="radio" + stepIndex + answerIndex;
+                            input(id=id, type="radio", name=stepIndex, value=answerStep.points)
+                            label(for=id).radio=answerStep.answer
+                button(type="submit") Find your KONG
+        
+        footer
+            p © #{new Date().getFullYear()} STH Expanded
