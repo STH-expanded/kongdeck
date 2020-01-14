@@ -3,11 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc",
+    "start": "yarn build && node ./build/index.js"
+  },
   "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.1.6",
+    "@types/twitter": "^1.7.0",
+    "axios": "^0.19.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "prettier": "^1.19.1",
     "prettierrc": "^0.0.0-5",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.20.1",
+    "twitter": "^1.7.1",
     "typescript": "^3.7.4"
   }
 }
