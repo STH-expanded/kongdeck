@@ -33,3 +33,10 @@ go run main.go
 go build main.go
 ```
 
+## Docket
+
+sudo docker build -t konggo .
+sudo docker run -p 3001:3001 -d konggo
+sudo docker ps
+sudo docker images
+sudo docker stop 9c50db162204
