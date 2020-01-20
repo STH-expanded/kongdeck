@@ -19,7 +19,7 @@ export class KongService {
                 id: 'diddy_kong',
                 name: 'Diddy Kong',
                 attributes: ['weakness', 'cowardliness', 'happiness', 'quirkiness'],
-                listID: '1219199556824465408',
+                list_id: '1219199556824465408',
             },
             {
                 id: 'funky_kong',
