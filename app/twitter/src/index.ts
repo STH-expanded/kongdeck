@@ -19,7 +19,6 @@ app.post('/status', async (req, res) => {
   postStatus(tweet, media).then((response) => {
     res.send(response)
   }).catch((error) => {
-    console.log(error)
     res.status(500).send(error)
   })
 })

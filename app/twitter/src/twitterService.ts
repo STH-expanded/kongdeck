@@ -10,7 +10,7 @@ const client = new Twitter({
 
 //Work in progress
 export const getList = async (list_id: string) => {
-  await client.get('lists/members', { list_id }).then((response) => {
+  return client.get('lists/members', { list_id }).then((response) => {
     console.log(response)
     return response
   }).catch((error) => {
