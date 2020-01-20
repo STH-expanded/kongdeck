@@ -1,6 +1,11 @@
 import Twitter from 'twitter'
 import fs from 'fs'
 
+interface IStatus {
+  id: number,
+  text: string,
+}
+
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY ?? '',
   consumer_secret: process.env.TWITTER_CONSUMER_SECRET ?? '',
@@ -10,9 +15,12 @@ const client = new Twitter({
 
 //Work in progress
 export const getList = async (list_id: string) => {
-  return client.get('lists/members', { list_id }).then((response) => {
-    console.log(response)
-    return response
+  return client.get('lists/statuses', { list_id }).then((response) => {
+    const values = response.map((o: { id: number; text: string, entities: any }) => {
+      const value: IStatus = { id: o.id, text: o.text }
+      return value
+    })
+    return values
   }).catch((error) => {
     return error
   })
