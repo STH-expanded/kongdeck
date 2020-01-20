@@ -1,4 +1,4 @@
-import { Controller, Get, Body } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import { KongService, Kong } from './kong.service';
 
 @Controller('kong')
@@ -8,7 +8,7 @@ export class KongController {
         private readonly kongService: KongService
     ) {}
 
-    @Get()
+    @Post()
     getKong(@Body() body: object): Promise<Kong> {
         return this.kongService.assignKong(body);
     }
