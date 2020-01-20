@@ -10,27 +10,32 @@ const client = new Twitter({
 
 //Work in progress
 export const getList = async (list_id: string) => {
-  client.get('lists/members', { list_id }).then((response) => {
+  await client.get('lists/members', { list_id }).then((response) => {
+    console.log(response)
     return response
   }).catch((error) => {
     return error
   })
 }
 
-export const postStatus = async (tweet: string, media: string) => {
-  const image = fs.readFileSync('./img/' + media + '.jpg')
-  client.post('media/upload', { media: image }, function (error, media, response) {
-    if (!error) {
-      console.log(media);
-      var status = {
-        status: tweet,
-        media_ids: media.media_id_string
-      }
-      client.post('statuses/update', status, function (error, tweet, response) {
-        if (!error) {
-          console.log(tweet);
-        }
-      });
-    }
-  });
+export const postStatus = async (tweet: string, kong: string) => {
+  const media = await postMedia(kong)
+  const status = {
+    status: kong + ' says: ' + tweet,
+    media_ids: media.media_id_string
+  }
+  return client.post('statuses/update', status).then((response) => {
+    return response
+  }).catch((error) => {
+    throw error
+  })
+}
+
+const postMedia = async (kong: string) => {
+  const image = fs.readFileSync('./img/' + kong + '.jpg')
+  return client.post('media/upload', { media: image }).then((media: any) => {
+    return media
+  }).catch((error) => {
+    throw error
+  })
 }

@@ -16,7 +16,7 @@ app.get('/list/:id', async (req, res) => {
 
 app.post('/status', async (req, res) => {
   const { tweet, media } = req.body
-  await postStatus(tweet, media).then((response) => {
+  postStatus(tweet, media).then((response) => {
     res.send(response)
   }).catch((error) => {
     console.log(error)
