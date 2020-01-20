@@ -1,24 +1,30 @@
-import express from 'express'
-import { getList, postStatus } from './twitterService'
+require('dotenv').config()
 
+import express from 'express'
+const bodyParser = require('body-parser');
+import { getList, postStatus } from './twitterService'
 const app = express()
 const port = process.env.TWITTER_PORT || 3000
 
-app.get('/', (req, res) => {
+app.use(bodyParser.json());
+
+app.get('/', async (req, res) => {
   res.send('Hello World!')
-  console.log('A request was made on /')
-  console.log(req)
 })
 
-app.get('/lists', async (req, res) => {
-  await getList()
-  console.log('A request was made on /')
-  console.log(req)
+app.get('/list/:id', async (req, res) => {
+  const id = req.params.id
+  const response = await getList(id)
+  res.send(response)
 })
 
 app.post('/status', async (req, res) => {
-  await postStatus()
-  console.log('Status sent')
+  const tweet = req.body.tweet
+  await postStatus(tweet).then((response) => {
+    res.send(response)
+  }).catch((error) => {
+    res.status(500).send(error)
+  })
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
