@@ -11,24 +11,20 @@ app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded());
 
 app.get('/', (req, res, next) => {
-    axios.get('http://localhost:3001/survey')
+    axios.get('http://konggo:3001/survey')
         .then(response => res.render('index', { survey: response.data }))
         .catch(error => next(error));
 });
 
-app.post('/', (req, res) => {
+app.post('/', (req, res, next) => {
     var map = new Map();
-
     Object.values(req.body).map(value => JSON.parse(value)).forEach(elem => {
         for (let [key, value] of Object.entries(elem)) map.set(key, map.has(key) ? map.get(key) + value : value);
     });
 
-    var result = Object.fromEntries(map);
-
-    // const query = await axios.get('http://localhost:3001/questions');
-    res.render('twitter', {
-        data: result
-    });
+    axios.post('http://localhost:3002/kong', Object.fromEntries(map))
+        .then(response => res.render('twitter', response))
+        .catch(error => next(error));
 });
 
 app.listen(port, () => console.log('Listening on port :', port));
