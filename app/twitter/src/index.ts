@@ -8,10 +8,6 @@ const port = process.env.TWITTER_PORT || 3000
 
 app.use(bodyParser.json());
 
-app.get('/', async (req, res) => {
-  res.send('Hello World!')
-})
-
 app.get('/list/:id', async (req, res) => {
   const id = req.params.id
   const response = await getList(id)
@@ -19,10 +15,11 @@ app.get('/list/:id', async (req, res) => {
 })
 
 app.post('/status', async (req, res) => {
-  const tweet = req.body.tweet
-  await postStatus(tweet).then((response) => {
+  const { tweet, media } = req.body
+  await postStatus(tweet, media).then((response) => {
     res.send(response)
   }).catch((error) => {
+    console.log(error)
     res.status(500).send(error)
   })
 })

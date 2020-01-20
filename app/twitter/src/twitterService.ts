@@ -1,4 +1,5 @@
 import Twitter from 'twitter'
+import fs from 'fs'
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY ?? '',
@@ -16,9 +17,20 @@ export const getList = async (list_id: string) => {
   })
 }
 
-export const postStatus = async (status: string) => {
-  client.post('statuses/update', { status }, (error, response) => {
-    if (error) return error
-    return response
-  })
+export const postStatus = async (tweet: string, media: string) => {
+  const image = fs.readFileSync('./img/' + media + '.jpg')
+  client.post('media/upload', { media: image }, function (error, media, response) {
+    if (!error) {
+      console.log(media);
+      var status = {
+        status: tweet,
+        media_ids: media.media_id_string
+      }
+      client.post('statuses/update', status, function (error, tweet, response) {
+        if (!error) {
+          console.log(tweet);
+        }
+      });
+    }
+  });
 }
