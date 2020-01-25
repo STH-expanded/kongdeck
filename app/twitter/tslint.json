@@ -1,0 +1,16 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-standard"],
+  "jsRules": {},
+  "rules": {
+    "object-literal-sort-keys": false,
+    "member-access": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "max-line-length": [true, { "ignore-pattern": { "type": "string" } }],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "no-console": false,
+    "await-promise": [true, "Bluebird"]
+  },
+  "rulesDirectory": []
+}

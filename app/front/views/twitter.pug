@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title KongDeck - #{name}
+
+        link(rel='stylesheet', href='/css/twitter.css')
+        script(src='/js/twitter.js')
+        script(src='/js/scroll.js')
+    
+    body
+        header
+            p KongDeck
+        
+        #container
+            #tweetList
+            #sendTweet
+                h1=name
+                each tweet, tweetIndex in tweets
+                    - var id="tweet" + tweetIndex;
+                    .tweetContainer
+                        input(id=id, type="radio", name="tweet", value=tweet)
+                        label(for=id).radio=tweet
+                button(id="submit") Refresh
+
+        footer
+            p © #{new Date().getFullYear()} STH Expanded
+
+        input(type="hidden", name="kong_id" id="kong_id" value=id)
+        input(type="hidden", name="list_id" id="list_id" value=list_id)

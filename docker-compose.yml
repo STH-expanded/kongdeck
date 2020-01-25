@@ -1,0 +1,12 @@
+version: '3'
+services:
+  front: 
+    build: ./app/front
+    ports:
+      - "3000:3000"
+    depends_on: 
+      - konggo
+  konggo: 
+    build: ./app/konggo
+    ports:
+      - "3001:3001"
