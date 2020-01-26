@@ -14,26 +14,82 @@ export class KongService {
                 id: 'donkey_kong',
                 name: 'Donkey Kong',
                 attributes: ['strongness', 'bravery', 'happiness', 'normality'],
-                tweets: [],
+                tweets: [
+                    'Now that\'s all sorted, I\'m going back to sleep.',
+                    'What\'cha do that for?! I was having a nice nap.',
+                    'My bananas and my buddy, Diddy, they are gone!',
+                ],
             },
             {
                 id: 'diddy_kong',
                 name: 'Diddy Kong',
                 attributes: ['weakness', 'cowardliness', 'happiness', 'quirkiness'],
                 list_id: '1219199556824465408',
-                tweets: [],
+                tweets: [
+                    'You lazy ape, you are getting too old for this!',
+                    'You\'re bluffing, lizard face.',
+                    'I\'m outta here!',
+                ],
             },
             {
                 id: 'funky_kong',
                 name: 'Funky Kong',
                 attributes: ['strongness', 'bravery', 'happiness', 'quirkiness'],
-                tweets: [],
+                list_id: '1221506799527976960',
+                tweets: [
+                    'Whoa, dudes! My name\'s Funky Kong!',
+                    'My bodacious jumbo barrel will take you anywhere',
+                    'Yo Gorillas! Go see old man Cranky, he can help ya out!',
+                ],
             },
             {
                 id: 'chunky_kong',
                 name: 'Chunky Kong',
                 attributes: ['strongness', 'cowardliness', 'sadness', 'normality'],
-                tweets: [],
+                tweets: [
+                    'PROZIS ALDE10',
+                    ''
+                ],
+            },
+            {
+                id: 'cranky_kong',
+                name: 'Cranky Kong',
+                attributes: ['weakness', 'cowardliness', 'sadness', 'quirkiness'],
+                tweets: [
+                    'Take a look inside your banana cave. You\'re in for a big surprise!',
+                    'You big ape! I could hear you coming from miles away!',
+                    'I\'ve got more gameplay in my little finger than this entire game does!',
+                ],
+            },
+            {
+                id: 'swanky_kong',
+                name: 'Swanky Kong',
+                attributes: ['weakness', 'cowardliness', 'happiness', 'quirkiness'],
+                tweets: [
+                    'Hello my fanzouzes',
+                    'Hello my little beauties',
+                    'Hello the kheys',
+                ],
+            },
+            {
+                id: 'bluster_kong',
+                name: 'Bluster Kong',
+                attributes: ['strongnesss', 'cowardliness', 'sadness', 'quirkiness'],
+                tweets: [
+                    'Wait a minute, not so fast! I want to go over that \'richer-poorer\' part again with my lawyer!',
+                    'Don\'t bother, I\'m watching it for you.',
+                    'I\'m just one sneaky, peeping, two-bit step away from becoming an even richer richest ape on Kongo Bongo Island- and that\'s rich.',
+                ],
+            },
+            {
+                id: 'wrinkly_kong',
+                name: 'Wrinkly Kong',
+                attributes: ['weakness', 'bravery', 'sadness', 'quirkiness'],
+                tweets: [
+                    'I\'ll be here if you need me.',
+                    'Match the pictures with DK in his cabin near Candy.',
+                    'Get DK\'s coconut shooter from Funky\'s Store and use it to hit the people.',
+                ],
             },
         ];
     }
