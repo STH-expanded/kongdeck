@@ -35,6 +35,7 @@ export class KongService {
                 id: 'funky_kong',
                 name: 'Funky Kong',
                 attributes: ['strongness', 'bravery', 'happiness', 'quirkiness'],
+                list_id: '1221506799527976960',
                 tweets: [
                     'Whoa, dudes! My name\'s Funky Kong!',
                     'My bodacious jumbo barrel will take you anywhere',
