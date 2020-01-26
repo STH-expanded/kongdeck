@@ -6,7 +6,17 @@ services:
       - "3000:3000"
     depends_on: 
       - konggo
+      - dongapi
+      - twitter
   konggo: 
     build: ./app/konggo
     ports:
       - "3001:3001"
+  dongapi:
+    build: ./app/dongapi
+    ports:
+      - "3002:3002"
+  twitter:
+    build: ./app/twitter
+    ports:
+      - "3003:3003"

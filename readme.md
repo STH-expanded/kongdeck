@@ -1,7 +1,6 @@
 # KONG-Deck
 
-
-## Docker Compose
+## Setup
 
 ```shell
 docker-compose build
