@@ -1,32 +1,33 @@
 [
   {
-    "question": "A delinquent is hassling a girl on a busy street! What will you do?",
+    "question": "A delinquent is harassing a girl on a busy street! What will you do?",
     "answers": [
       {
         "answer": "Help without hesitation.",
         "points": {
-          "brave": 3
+          "strongness": 3,
+          "bravery": 1
         }
       },
       {
         "answer": "Help, even if scared.",
         "points": {
-          "hardy": 2,
-          "brave": 2
+          "strongness": 1,
+          "bravery": 3
         }
       },
       {
         "answer": "Call the police.",
         "points": {
-          "docile": 1,
-          "timid": 1,
-          "relaxed": 1
+          "weakness": 3,
+          "cowardliness": 1
         }
       },
       {
         "answer": "Do nothing out of fear.",
         "points": {
-          "timid": 2
+          "weakness": 1,
+          "cowardliness": 3
         }
       }
     ]
@@ -37,19 +38,26 @@
       {
         "answer": "Haha! Yes. Very funny!",
         "points": {
-          "jolly": 3
+          "quirkiness": 3
         }
       },
       {
         "answer": "Um, could you say that again?",
         "points": {
-          "hardy": 2
+          "normality": 3
         }
       },
       {
         "answer": "Right...well I gotta go.",
         "points": {
-          "timid": 2
+          "cowardliness": 3
+        }
+      },
+      {
+        "answer": "This guy could be aggressive, you proceed to banana-slam him, just in case",
+        "points": {
+          "strongness": 3,
+          "quirkiness": 1
         }
       }
     ]
@@ -58,22 +66,29 @@
     "question": "A friend brought over something you'd forgotten. How do you thank your friend?",
     "answers": [
       {
-        "answer": "Say thank you regularly.",
+        "answer": "Say ‘thank you’ regularly.",
         "points": {
-          "docile": 2
+          "normality": 3
         }
       },
       {
         "answer": "Say thanks with a joke.",
         "points": {
-          "naive": 1,
-          "lonely": 1
+          "happiness": 3
         }
       },
       {
-        "answer": "Say thanks, but be cool.",
+        "answer": "Say thanks, I was afraid I lost it.",
         "points": {
-          "sassy": 2
+          "sadness": 2,
+          "cowardliness": 1
+        }
+      },
+      {
+        "answer": "Take it from him and spit on your friend",
+        "points": {
+          "strongness": 3,
+          "cowardliness": 1
         }
       }
     ]
@@ -84,23 +99,241 @@
       {
         "answer": "Scream and run.",
         "points": {
-          "timid": 2,
-          "lonely": 1
+          "cowardliness": 2,
+          "normality": 1
         }
       },
       {
         "answer": "Close the lid without a word.",
         "points": {
-          "hardy": 1,
-          "calm": 2
+          "weakness": 1,
+          "normality": 2
         }
       },
       {
         "answer": "Shake hands with it.",
         "points": {
-          "naive": 1,
-          "brave": 2,
-          "impish": 1
+          "bravery": 1,
+          "quirkiness": 3
+        }
+      },
+      {
+        "answer": "You call the police",
+        "points": {
+          "cowardliness": 3,
+          "normality": 1
+        }
+      }
+    ]
+  },
+  {
+    "question": "A beggar approaches you, asking if you have some change to spare. What would you do?",
+    "answers": [
+      {
+        "answer": "Scream and run.",
+        "points": {
+          "cowardliness": 2,
+          "weakness": 1
+        }
+      },
+      {
+        "answer": "Give him a quarter.",
+        "points": {
+          "normality": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "answer": "Give him your phone, wallet and shoes.",
+        "points": {
+          "weakness": 2,
+          "sadness": 2
+        }
+      },
+      {
+        "answer": "Shake hand with him",
+        "points": {
+          "quirkiness": 3,
+          "bravery": 1
+        }
+      }
+    ]
+  },
+  {
+    "question": "You see a kid falling on street, it seems injured and start crying. What is your reaction ?",
+    "answers": [
+      {
+        "answer": "Floss on him.",
+        "points": {
+          "quirkiness": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "answer": "Cry with him.",
+        "points": {
+          "sadness": 3,
+          "weakness": 1
+        }
+      },
+      {
+        "answer": "Help him and give him sweets",
+        "points": {
+          "normality": 3,
+          "happiness": 1
+        }
+      },
+      {
+        "answer": "Shake hand with him.",
+        "points": {
+          "bravery": 1,
+          "strongness": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "A delinquent is harassing a girl on a busy street! What will you do?",
+    "answers": [
+      {
+        "answer": "Help without hesitation.",
+        "points": {
+          "strongness": 3,
+          "bravery": 1
+        }
+      },
+      {
+        "answer": "Help, even if scared.",
+        "points": {
+          "strongness": 1,
+          "bravery": 3
+        }
+      },
+      {
+        "answer": "Call the police.",
+        "points": {
+          "weakness": 3,
+          "cowardliness": 1
+        }
+      },
+      {
+        "answer": "Do nothing out of fear.",
+        "points": {
+          "weakness": 1,
+          "cowardliness": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "A foreign person has started up a conversation with you. To be honest, you don't have a clue what this fellow is saying. How do you reply?",
+    "answers": [
+      {
+        "answer": "Haha! Yes. Very funny!",
+        "points": {
+          "quirkiness": 3
+        }
+      },
+      {
+        "answer": "Um, could you say that again?",
+        "points": {
+          "normality": 3
+        }
+      },
+      {
+        "answer": "Right...well I gotta go.",
+        "points": {
+          "cowardliness": 3
+        }
+      },
+      {
+        "answer": "This guy could be aggressive, you proceed to banana-slam him, just in case",
+        "points": {
+          "strongness": 3,
+          "quirkiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "question": "A friend brought over something you'd forgotten. How do you thank your friend?",
+    "answers": [
+      {
+        "answer": "Say ‘thank you’ regularly.",
+        "points": {
+          "normality": 3
+        }
+      },
+      {
+        "answer": "Say thanks with a joke.",
+        "points": {
+          "happiness": 3
+        }
+      },
+      {
+        "answer": "Say thanks, I was afraid I lost it.",
+        "points": {
+          "sadness": 2,
+          "cowardliness": 1
+        }
+      },
+      {
+        "answer": "Take it from him and spit on your friend",
+        "points": {
+          "strongness": 3,
+          "cowardliness": 1
+        }
+      }
+    ]
+  },
+  {
+    "question": "A human hand extends out of a toilet! What would you do?",
+    "answers": [
+      {
+        "answer": "Scream and run.",
+        "points": {
+          "cowardliness": 2,
+          "normality": 1
+        }
+      },
+      {
+        "answer": "Close the lid without a word.",
+        "points": {
+          "weakness": 1,
+          "normality": 2
+        }
+      },
+      {
+        "answer": "Shake hands with it.",
+        "points": {
+          "bravery": 1,
+          "quirkiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "A human hand extends out of a toilet! What would you do?",
+    "answers": [
+      {
+        "answer": "Scream and run.",
+        "points": {
+          "cowardliness": 2,
+          "normality": 1
+        }
+      },
+      {
+        "answer": "Close the lid without a word.",
+        "points": {
+          "weakness": 1,
+          "normality": 2
+        }
+      },
+      {
+        "answer": "Shake hands with it.",
+        "points": {
+          "bravery": 1,
+          "quirkiness": 3
         }
       }
     ]
