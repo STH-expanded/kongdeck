@@ -14,26 +14,177 @@ export class KongService {
                 id: 'donkey_kong',
                 name: 'Donkey Kong',
                 attributes: ['strongness', 'bravery', 'happiness', 'normality'],
-                tweets: [],
+                list_id: '1223170398038249478',
+                tweets: [
+                    'Now that\'s all sorted, I\'m going back to sleep.',
+                    'What\'cha do that for?! I was having a nice nap.',
+                    'My bananas and my buddy, Diddy, they are gone!',
+                ],
             },
             {
                 id: 'diddy_kong',
                 name: 'Diddy Kong',
-                attributes: ['weakness', 'cowardliness', 'happiness', 'quirkiness'],
+                attributes: ['strongness', 'cowardliness', 'happiness', 'normality'],
                 list_id: '1219199556824465408',
-                tweets: [],
+                tweets: [
+                    'You lazy ape, you are getting too old for this!',
+                    'You\'re bluffing, lizard face.',
+                    'I\'m outta here!',
+                ],
             },
             {
                 id: 'funky_kong',
                 name: 'Funky Kong',
                 attributes: ['strongness', 'bravery', 'happiness', 'quirkiness'],
-                tweets: [],
+                list_id: '1221506799527976960',
+                tweets: [
+                    'Whoa, dudes! My name\'s Funky Kong!',
+                    'My bodacious jumbo barrel will take you anywhere',
+                    'Yo Gorillas! Go see old man Cranky, he can help ya out!',
+                ],
             },
             {
                 id: 'chunky_kong',
                 name: 'Chunky Kong',
                 attributes: ['strongness', 'cowardliness', 'sadness', 'normality'],
-                tweets: [],
+                list_id: '1223170453444997121',
+                tweets: [
+                    'PROZIS ALDE10',
+                    'Someone h-help me! I\'m s-scared !',
+                    'Chunky free now. Thank you friend Lanky.'
+                ],
+            },
+            {
+                id: 'cranky_kong',
+                name: 'Cranky Kong',
+                attributes: ['weakness', 'cowardliness', 'sadness', 'quirkiness'],
+                list_id: '1223170496193290241',
+                tweets: [
+                    'Take a look inside your banana cave. You\'re in for a big surprise!',
+                    'You big ape! I could hear you coming from miles away!',
+                    'I\'ve got more gameplay in my little finger than this entire game does!',
+                ],
+            },
+            {
+                id: 'swanky_kong',
+                name: 'Swanky Kong',
+                attributes: ['weakness', 'cowardliness', 'happiness', 'quirkiness'],
+                list_id: '1223170531266125826',
+                tweets: [
+                    'Hello my fanzouzes',
+                    'Hello my little beauties',
+                    'Hello the kheys',
+                ],
+            },
+            {
+                id: 'bluster_kong',
+                name: 'Bluster Kong',
+                attributes: ['strongness', 'cowardliness', 'sadness', 'quirkiness'],
+                list_id: '1223170558776561664',
+                tweets: [
+                    'Wait a minute, not so fast! I want to go over that \'richer-poorer\' part again with my lawyer!',
+                    'Don\'t bother, I\'m watching it for you.',
+                    'I\'m just one sneaky, peeping, two-bit step away from becoming an even richer richest ape on Kongo Bongo Island- and that\'s rich.',
+                ],
+            },
+            {
+                id: 'wrinkly_kong',
+                name: 'Wrinkly Kong',
+                attributes: ['weakness', 'bravery', 'sadness', 'quirkiness'],
+                list_id: '1223170586551226368',
+                tweets: [
+                    'I\'ll be here if you need me.',
+                    'Match the pictures with DK in his cabin near Candy.',
+                    'Get DK\'s coconut shooter from Funky\'s Store and use it to hit the people.',
+                ],
+            },
+            {
+                id: 'dixie_kong',
+                name: 'Dixie Kong',
+                attributes: ['weakness', 'bravery', 'happiness', 'quirkiness'],
+                list_id: '1223170618100723712',
+                tweets: [
+                    'Man, I love chocolate!',
+                    'Let\'d do it, Boomer!',
+                    'No way, you crazy bear!',
+                ],
+            },
+            {
+                id: 'lanky_kong',
+                name: 'Lanky Kong',
+                attributes: ['weakness', 'cowardliness', 'sadness', 'normality'],
+                list_id: '1223170643568611329',
+                tweets: [
+                    'Come and find me in the Tag Barrel!',
+                    'Yahoo! Come up here and get me, dummies!',
+                    'Hopla !',
+                ],
+            },
+            {
+                id: 'candy_kong',
+                name: 'Candy Kong',
+                attributes: ['weakness', 'cowardliness', 'happiness', 'normality'],
+                list_id: '1223170689731125248',
+                tweets: [
+                    'How would you like a quick spin in my save barrel?',
+                    'For just 3 coins, I`\'ll let you play with my instrument anytime you want.',
+                    'Your instrument\'s lost some of its energy. Here, let me fix it for you.',
+                ],
+            },
+            {
+                id: 'kiddy_kong',
+                name: 'Kiddy Kong',
+                attributes: ['strongness', 'cowardliness', 'happiness', 'quirkiness'],
+                list_id: '1223170715697983488',
+                tweets: [
+                    'WAAAAAAAAA',
+                    'Ouh Ouh !',
+                    'OOOh OOOOOOOOh !',
+                ],
+            },
+            {
+                id: 'tiny_kong',
+                name: 'Tiny Kong',
+                attributes: ['weakness', 'bravery', 'sadness', 'normality'],
+                list_id: '1223170743929843713',
+                tweets: [
+                    'Nice work, Diddy!',
+                    'I\'m off to the Tag Barrel- Ready to kick some reptile butt!',
+                    'My friends and I will look out for them on our adventure.',
+                ],
+            },
+            {
+                id: 'chained_kong',
+                name: 'Chained Kong',
+                attributes: ['strongness', 'bravery', 'sadness', 'normality'],
+                list_id: '1223170783859617793',
+                tweets: [
+                    'Wallah, I did nothing wrong !',
+                    'Get me out of the zonzon please',
+                    'Ouh Ouh !',
+                ],
+            },
+            {
+                id: 'eddie_the_mean_old_yeti',
+                name: 'Eddie The Mean Old Yeti',
+                attributes: ['strongness', 'bravery', 'sadness', 'quirkiness'],
+                list_id: '1223170867246571521',
+                tweets: [
+                    'GRRRRRR',
+                    'Me Like You !',
+                    'Me Eddie, the Mean Old Yeti',
+                ],
+            },
+            {
+                id: 'baby_kong',
+                name: 'Baby Kong',
+                attributes: ['weakness', 'bravery', 'happiness', 'normality'],
+                list_id: '1223170817850212352',
+                tweets: [
+                    'Ouh Ouh !',
+                    'Gou Gou !',
+                    'BRRRRRRR !',
+                ],
             },
         ];
     }
@@ -54,7 +205,7 @@ export class KongService {
         if (!results['normality']) { results['normality'] = 0; }
 
         // Assign attributes to user
-        results['strongness'] >= results['weakness'] ? userAttributes.push('strongness') : userAttributes.push('strongness');
+        results['strongness'] >= results['weakness'] ? userAttributes.push('strongness') : userAttributes.push('weakness');
         results['bravery'] >= results['cowardliness'] ? userAttributes.push('bravery') : userAttributes.push('cowardliness');
         results['happiness'] >= results['sadness'] ? userAttributes.push('happiness') : userAttributes.push('sadness');
         results['quirkiness'] >= results['normality'] ? userAttributes.push('quirkiness') : userAttributes.push('normality');

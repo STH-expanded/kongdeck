@@ -14,17 +14,20 @@ html(lang='en')
         
         #container
             #tweetList
-            #sendTweet
+            form(id="sendTweet" action="/", method="post")
                 h1=name
+                input(type="hidden", name="reload" id="reload" value='1')
+                input(type="hidden", name="name" id="name" value=name)
+                input(type="hidden", name="kong_id" id="kong_id" value=id)
+                input(type="hidden", name="list_id" id="list_id" value=list_id)
+                input(type="hidden", name="list" id="list" value=list)
+                input(type="hidden", name="kong_tweets" id="kong_tweets" value=tweets)
                 each tweet, tweetIndex in tweets
                     - var id="tweet" + tweetIndex;
                     .tweetContainer
                         input(id=id, type="radio", name="tweet", value=tweet)
                         label(for=id).radio=tweet
-                button(id="submit") Refresh
+                button(id="submit") Tweet!
 
         footer
             p © #{new Date().getFullYear()} STH Expanded
-
-        input(type="hidden", name="kong_id" id="kong_id" value=id)
-        input(type="hidden", name="list_id" id="list_id" value=list_id)

@@ -199,6 +199,7 @@ html body #container #sendTweet #submit:hover {
 
 html body #container #tweetList {
   width: calc(50% - 16px);
+  max-height: calc(100% - 18px - 256px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,9 +213,16 @@ html body #container #tweetList {
   border: 1px solid #aaa;
   border-left: none;
   border-right: none;
-  background-image: url("../img/load.gif");
-  background-repeat: no-repeat;
-  background-position: center;
+  overflow: scroll;
+}
+
+html body #container #tweetList .tweetElement {
+  width: calc(100% - 32px);
+  margin: 8px;
+  padding: 8px;
+  background-color: #A0C0F0;
+  color: #000;
+  border-radius: 4px;
 }
 
 @media (max-width: 1200px) {
