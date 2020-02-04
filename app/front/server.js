@@ -25,6 +25,7 @@ app.post('/', (req, res, next) => {
         if (req.body.tweet) {
             axios.post('http://twitter:3003/status', { tweet:req.body.tweet, media:req.body.kong_id })
                 .then(response => {
+                    console.log(response)
                     res.render('twitter', {
                         id: req.body.kong_id,
                         list_id: req.body.list_id,
@@ -33,7 +34,10 @@ app.post('/', (req, res, next) => {
                         tweets: JSON.parse(req.body.kong_tweets)
                     });
                 })
-                .catch(error => next(error));
+                .catch(error => {
+                    next(error)
+                    console.log(error)
+                });
         } else {
             res.render('twitter', {
                 id: req.body.kong_id,

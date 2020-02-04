@@ -193,147 +193,65 @@
     ]
   },
   {
-    "question": "A delinquent is harassing a girl on a busy street! What will you do?",
+    "question": "Your favorite candidate to the presidential election doesn't win. What do you do ?",
     "answers": [
       {
-        "answer": "Help without hesitation.",
+        "answer": "Cry a lot",
         "points": {
-          "strongness": 3,
-          "bravery": 1
+          "sadness": 3,
+          "weakness": 1
         }
       },
       {
-        "answer": "Help, even if scared.",
+        "answer": "You're sad, but it's OK",
         "points": {
-          "strongness": 1,
+          "bravery": 1,
+          "normality": 2
+        }
+      },
+      {
+        "answer": "You are happy for the other candidate. Finally, it was objectively the best candidate",
+        "points": {
+          "happiness": 3,
+          "normality": 1
+        }
+      },
+      {
+        "answer": "You go outside and punch the first person you see",
+        "points": {
+          "strongness": 3,
+          "quirkiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "question": "You have an Halloween Party tonight. What is your costume ?",
+    "answers": [
+      {
+        "answer": "A Dinosaur",
+        "points": {
+          "strongness": 2,
+          "happiness": 1
+        }
+      },
+      {
+        "answer": "King K. Rool",
+        "points": {
+          "cowardliness": 3,
+          "sadness": 1
+        }
+      },
+      {
+        "answer": "A Pumpkin",
+        "points": {
+          "normality": 3
+        }
+      },
+      {
+        "answer": "A Big Banana",
+        "points": {
           "bravery": 3
-        }
-      },
-      {
-        "answer": "Call the police.",
-        "points": {
-          "weakness": 3,
-          "cowardliness": 1
-        }
-      },
-      {
-        "answer": "Do nothing out of fear.",
-        "points": {
-          "weakness": 1,
-          "cowardliness": 3
-        }
-      }
-    ]
-  },
-  {
-    "question": "A foreign person has started up a conversation with you. To be honest, you don't have a clue what this fellow is saying. How do you reply?",
-    "answers": [
-      {
-        "answer": "Haha! Yes. Very funny!",
-        "points": {
-          "quirkiness": 3
-        }
-      },
-      {
-        "answer": "Um, could you say that again?",
-        "points": {
-          "normality": 3
-        }
-      },
-      {
-        "answer": "Right...well I gotta go.",
-        "points": {
-          "cowardliness": 3
-        }
-      },
-      {
-        "answer": "This guy could be aggressive, you proceed to banana-slam him, just in case",
-        "points": {
-          "strongness": 3,
-          "quirkiness": 1
-        }
-      }
-    ]
-  },
-  {
-    "question": "A friend brought over something you'd forgotten. How do you thank your friend?",
-    "answers": [
-      {
-        "answer": "Say ‘thank you’ regularly.",
-        "points": {
-          "normality": 3
-        }
-      },
-      {
-        "answer": "Say thanks with a joke.",
-        "points": {
-          "happiness": 3
-        }
-      },
-      {
-        "answer": "Say thanks, I was afraid I lost it.",
-        "points": {
-          "sadness": 2,
-          "cowardliness": 1
-        }
-      },
-      {
-        "answer": "Take it from him and spit on your friend",
-        "points": {
-          "strongness": 3,
-          "cowardliness": 1
-        }
-      }
-    ]
-  },
-  {
-    "question": "A human hand extends out of a toilet! What would you do?",
-    "answers": [
-      {
-        "answer": "Scream and run.",
-        "points": {
-          "cowardliness": 2,
-          "normality": 1
-        }
-      },
-      {
-        "answer": "Close the lid without a word.",
-        "points": {
-          "weakness": 1,
-          "normality": 2
-        }
-      },
-      {
-        "answer": "Shake hands with it.",
-        "points": {
-          "bravery": 1,
-          "quirkiness": 3
-        }
-      }
-    ]
-  },
-  {
-    "question": "A human hand extends out of a toilet! What would you do?",
-    "answers": [
-      {
-        "answer": "Scream and run.",
-        "points": {
-          "cowardliness": 2,
-          "normality": 1
-        }
-      },
-      {
-        "answer": "Close the lid without a word.",
-        "points": {
-          "weakness": 1,
-          "normality": 2
-        }
-      },
-      {
-        "answer": "Shake hands with it.",
-        "points": {
-          "bravery": 1,
-          "quirkiness": 3
         }
       }
     ]
